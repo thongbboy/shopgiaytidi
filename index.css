@@ -1,0 +1,284 @@
+/* RESET CSS OPTIONS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* END RESET CSS OPTIONS*/
+html {
+    scroll-behavior: smooth;
+  }
+h1,h2,h3,h4,h5,h6,p,a {
+    font-family: 'Roboto', sans-serif;
+}
+
+.top-nav{
+    text-align: center;
+    width: 100vw;
+    height: 83px;
+    background-color: black;
+}
+.top-nav h1{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    padding-top: 10px;
+}
+.top-nav p{
+    padding-top: 5px;
+    color: white;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+.bottom-nav {
+    text-align: center;
+    height: 54px;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+.bottom-nav .item{
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: 0.2s;
+}
+.bottom-nav a{
+    color: black;
+    font-weight: 700;
+    font-size: .9em;
+    padding-top: 17px;
+    list-style: none;
+    text-decoration: none;
+}
+
+.bottom-nav .item:hover{
+    border-bottom: 5px solid rgb(200, 0, 0)    ;
+    margin-bottom: -8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+}
+.chose-item{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 50px;
+    display: flex;
+}
+.chose-item .item{
+    width: 30%;
+    text-align: center;
+    margin-right: 1.6%;
+    margin-left: 1.6%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1.5px solid rgba(0, 0, 0, 0);
+    position: relative;
+    transition: 0.5s;
+}
+.chose-item h2{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding-bottom: 40px;
+}
+.chose-item img{
+    width: 100%;
+}
+.chose-item .nike img{
+    width: 88%;
+}
+.chose-item .mlb img{
+    width: 93%;
+}
+@media screen and (max-width:850px){
+    .chose-item {
+        display: block;
+        align-items: center;
+    }
+    .chose-item .item{
+        width: 80%;
+        margin-left: 14%;
+    }
+}
+.chose-item .buynow{
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    border-radius: 10px;
+    height: 15%;
+    width: 60%;
+    margin-left: 20%;
+    display: none;
+    transition: 1s;
+    top: 50%;
+    transition-property: 2s;
+
+}
+.chose-item .buynow a{
+    color: white;
+    padding: 20px 15px 20px 15px;
+    text-decoration: none;
+}
+.chose-item .item:hover{
+    border: 1.5px solid black;
+}
+.chose-item .item:hover .buynow{
+    display: block;
+}
+.all-item{
+    margin-left: 13%;
+    margin-right: 13%;
+    padding-top: 20px;
+    text-align: center;
+}
+.all-item img{
+    width: 220px;
+}
+.nike-title{
+    
+}
+.nike-title h2{
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    font-size: 28px;
+    padding-bottom: 4px;
+    padding-left: 20px;
+    border-bottom: 2px solid black;
+    width: 100%; 
+    margin-bottom: 30px;  
+    text-align: left; 
+}
+.s-item-all{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.title p{
+    padding-bottom: 10px;
+}
+.much p{
+    color: red;
+}
+button {
+    background-color: red;
+    border: 0px;
+    width: 60%;
+    height: 15%;
+    margin-top: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.s-item{
+    padding-bottom: 30px;
+}
+.s-item a{
+    color: white;
+    text-decoration: none;
+}
+
+.buynow-sup{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    top: 0;
+}
+.buynow-sup iframe{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#section5 .main{
+    text-align: center;
+    width: 100%;
+}
+#section5 .main p{
+    text-align: center;
+}
+#section5 .main img{
+    width: 220px;
+    height: auto;
+}
+#section5 .main-item img {
+    width: 30%;
+}
+.main-item-s{
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    width: 20vw;
+    padding-left: 5%;
+}
+.main-item-s p{
+    padding-top: 10%;
+    padding-left: 2%;
+}
+.main-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 2%;
+}
+
+footer{
+    background-color: black;
+    color: rgba(255,255,255,0.5);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 715px){
+    .main-item{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-item-s{
+        width: 40%;
+    }
+}
+/* http://mauweb.monamedia.net/converse/ */
